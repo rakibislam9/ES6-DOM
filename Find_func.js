@@ -9,9 +9,14 @@ const products = [
 ]
 
 
-for (let i= 0; i < products.length; i++){
-    const element = products[i];
-    if(element.price > 22000){
-        console.log(element);
-    }
-}
+// for (let i= 0; i < products.length; i++){
+//     const element = products[i];
+//     if(element.price > 22000){
+//         console.log(element);
+//     }
+// }
+
+
+
+const Phone = products.find(product => product.color == "blue");
+console.log(Phone);
